@@ -11,6 +11,12 @@ let orc = {
   color: "green",
 };
 
+let time = {
+  hour: 5,
+  minute: 20,
+  seconds: 2,
+};
+
 console.log(orc.name);
 
 // console.log(module.exports);
