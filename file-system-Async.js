@@ -14,8 +14,10 @@ readFile("./content/first.txt", "utf8", (err, result) => {
     }
     const second = result;
 
-    writeFile("./content/result.txt", { first, second }, (err, result)=>{
-        
+    writeFile("./content/result.txt", { first, second }, (err)=>{
+        if(err){
+          console.log(err);
+        }
     });
   });
 });
